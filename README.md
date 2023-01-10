@@ -1,4 +1,4 @@
-# R_france_app
+# Real-Time Flight Data Visualisation
 
 ![alt text](https://github.com/remicnrd/R_france_app/blob/master/preview.png)
 
