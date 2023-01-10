@@ -7,7 +7,7 @@ This project is mainly to show the possibilities of R in addition to his initial
 I created a fully functionnal and user-friendly web application, that uses web scrapping to get live data of Air France flights.
 The flights are plotted on a reactive map with a color distinction according to their provenance/destination. The concerned airports are also plotted and differentiated by size according to frequentation.
 
-## Web scraping part
+## Web-scraping part
 The live flights data are taken from flightaware.com. Once the airline url obtained, the data is displayed in a table but limited to 20 rows per page.
 That's why I needed to parse the table as a Dataframe, find the next page link node (I used <a href="http://selectorgadget.com/">SelectorGadget</a> for Chrome) and start the process again.
 The last occurences being when the scrapped Dataframe contains less than the max occurences per page (here 20).
@@ -23,12 +23,12 @@ I then added a new dimension to my concerned airports list with the count of dep
 Finally, I created a boolean variable indicating if a flight is an incoming or outcoming french flight to take a look at the two flows.
 
 
-## Dataviz
+## Data Visualisation
 The map is in fact a <a href="https://www.mapbox.com/">Mapbox</a>, using <a href="https://plot.ly/">Plotly</a>.
 The main idea is to superimpose the various information layers, that is the map, the airports markers and the flights segments.
 All of that toying with available parameters to obtain a pleasant design.
 
-## Web app
+## Web-app building
 Every R script can be turn into a web app using <a href="https://shiny.rstudio.com/">shiny</a>. 
 Now you don't necessarily have to structure your app in several files. However the R code has to be separated in a UI and Server part.
 
